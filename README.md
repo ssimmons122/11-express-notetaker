@@ -8,11 +8,14 @@ Heroku deployed link:
 
 Screenshot: 
 
+## Built with:
+- JavaScript
+- NodeJS
+- ExpressJS
+
 ## Installation
 To intall required dependencies, run: <br>
 npm i express 
-
-## Usage
 
 ## Acknowledgements
 Starter code cloned from https://github.com/coding-boot-camp/miniature-eureka <br>

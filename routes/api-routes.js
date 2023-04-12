@@ -1,9 +1,28 @@
-const fs = require ("fs"); //
-let data = json.parse(fs.readFileSync("./db/db.json", "utf8")); // fix dbjson route
+const router = require('express-router');
+const store = require('db/store.js');
 
-module.exports = function(app) {
-    app.get("/api/notes", function(req, res) {
-       
-        res.json(data);
-    });
-}
+router.get('/notes', (req, res) => {
+    store.getNotes()
+        .then(notes => {
+        res.json(notes)
+    })
+    .catch(err => {
+        res.status(500).json(err)
+    })
+})
+
+// posting note function route 
+
+router.post('/notes', (req, res) => {
+console.log(req.body)
+store
+    .addNote(req.body)
+    .then(note => {
+        res.json(note)
+    })
+    .catch(err => {
+        res.status(500).json(err)
+    })
+})
+
+module.exports = router;

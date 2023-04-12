@@ -5,8 +5,9 @@ A simple application using Express.js back-end that can be used to write and sav
 
 ## Visuals and Link
 Heroku deployed link: 
-
-Screenshot: 
+GitHub Repo:  https://github.com/ssimmons122/11-express-notetaker <br>
+Screenshot: <br>
+![Screenshot 2023-04-11 at 11 31 48 PM](https://user-images.githubusercontent.com/121777930/231341933-13c11f5d-754a-49a6-95ba-f53507ab5b73.png)
 
 ## Built with:
 - JavaScript
